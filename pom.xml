@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.boiler.selenium</groupId>
+	<artifactId>selenium-boiler</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<dependencies>
+		<!--Create robust, browser-based regression automation suites and tests, scale and distribute scripts across many environments-->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.10.0</version>
+		</dependency>
+		<!--a smart proxy server that makes it easy to run tests in parallel on multiple machines-->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-grid</artifactId>
+			<version>4.10.0</version>
+		</dependency>
+		<!--One of the most widely used logging frameworks in the Java-->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.4.6</version>
+		</dependency>
+		<!--allows for plugging different logging frameworks at deployment time without the need for code changes-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.5</version>
+		</dependency>
+		<!--Facilitates discovery and execution of tests for a particular programming model-->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.9.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+</project>
